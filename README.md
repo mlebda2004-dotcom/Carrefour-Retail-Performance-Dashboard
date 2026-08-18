@@ -1,74 +1,81 @@
 # Carrefour Retail Performance Dashboard
 
-An end-to-end Power BI dashboard analyzing sales, profitability, customer behavior, and product performance for Carrefour retail stores across Egypt (Cairo, Giza, Alexandria) between 2022 and 2024.
+An interactive Power BI dashboard designed to analyze Carrefour retail performance across sales, products, customers, and branches.
 
-## Overview
+The project started with a raw dataset that required data cleaning and preparation before analysis. The final dashboard provides interactive insights into sales performance, customer behavior, product performance, branch performance, and return rates.
 
-This project transforms raw transactional retail data into a 4-page interactive Power BI dashboard that helps stakeholders answer key business questions: which branches perform best, who the customers are, which products drive revenue, and how sales trend over time and by channel.
+## Project Overview
 
-## Business Questions Answered
+An interactive Power BI dashboard designed to analyze Carrefour retail performance across **sales, products, customers, and branches**.
 
-- Which store regions, cities, and branches generate the highest net sales and profit?
-- How do sales and returns differ by return status across branches?
-- What's the customer profile driving revenue — by age group and gender?
-- Which order channel (App, Store, Website) do customers use most, and how does that vary by age group?
-- What's the completion vs. cancellation vs. return rate of transactions?
-- Which product brands and products are the top sellers and most profitable?
-- How do sales trend month over month, and what are the peak transaction times?
+The project started with a raw dataset that required data cleaning and preparation before analysis. The final dashboard provides interactive insights into **sales performance, customer behavior, product performance, branch performance, and return rates**.
+
+**The analysis was performed using a single flat table, without a separate data model.**
+
+
+## Business Questions
+
+The analysis aims to answer the following business questions:
+
+1. What is the overall sales and profit performance?
+2. Which products and categories generate the highest sales and profit?
+3. Who are the highest-value customer segments?
+4. Which branches and cities have the strongest sales performance?
+5. When do customers make the most transactions?
+6. What is the return rate, and how does it affect net sales?
+7. How does sales performance vary across different channels and time periods?
+
+
+## Data Cleaning & Preparation
+
+The raw dataset required several cleaning and preparation steps before analysis:
+
+* **Date Correction:** Fixed inconsistencies in the date column and restructured the data to create a reliable calendar table.
+* **Data Standardization:** Corrected and standardized categorical values, including the Gender column.
+* **Feature Engineering:** Created age groups such as **Young, Adult, and Senior** to analyze customer behavior across different age segments.
+* **Time Analysis:** Created time-of-day categories such as **Morning, Afternoon, and Evening** to identify peak transaction periods.
+* **Data Types:** Reviewed and corrected data types to ensure accurate calculations and visualizations.
+
+The cleaned dataset was then used to build the interactive Power BI dashboard.
+
 
 ## Dashboard Pages
 
-### 1. Sales Dashboard
+# 1. Sales Dashboard
 Overview of gross sales, net sales, profit, and quantity sold, broken down by store city, store name, monthly trend, and peak transaction time (morning/afternoon/evening/night).
 
-### 2. Branches Performance
+# 2. Branches Performance
 Compares the three store regions (North Coast, Greater Cairo, Delta) and their cities/branches on net sales, returns, and profit, with year and demographic (age group, gender) filters.
 
-### 3. Customer Insights
+# 3. Customer Insights
 Analyzes customer behavior: sales by age group and gender, order channel usage by age group, and transaction status breakdown (completed / cancelled / returned) with a return rate KPI.
 
-### 4. Product Dashboard
+# 4. Product Dashboard
 Breaks down sales, profit, and quantity by brand (HP, Samsung, Fresh, Apple, LG) and by individual product, filterable by year and city.
 
-## Tools Used
-
-- **Power BI Desktop** — data modeling, DAX measures, and dashboard design
-- **Power Query** — data cleaning and transformation
-- **Excel** — source dataset
-
-## Data Model
-
-The dataset is structured as a star schema with one fact table and several dimension tables:
-
-| Table | Description |
-|---|---|
-| `Data` (Fact) | Transaction-level records: order/ship dates, customer, segment, location, product, sales, quantity, discount, and profit |
-| `Customer` | Customer ID and name |
-| `Location` | Store region, city, and state per location ID |
-| `Product` | Category, sub-category, and product name per product ID |
-| `Segment` | Customer segment lookup |
-| `ShipMode` | Shipping method lookup |
 
 ## Key Insights
 
-- Greater Cairo and North Coast are the top-performing regions by net sales, with Delta slightly behind.
-- Adult customers (age group) generate the highest gross and net sales, followed by Young and Senior groups.
-- Store purchases outperform App and Website channels for the Adult segment, while channel usage is more balanced for Young and Senior customers.
-- Return rate sits above 50% on several pages, which is worth flagging as a data quality or business concern to investigate further.
-- HP and Samsung lead as the top-performing brands by both sales and profit.
+The analysis revealed several important insights:
 
-## Files in this Repository
+* **Return Rate:** The return rate reached **50.08%**, with Gross Sales of approximately **46M** compared to Net Sales of approximately **33M**, indicating a significant gap between gross and net sales that requires further investigation.
 
-```
-Carrefour-Retail-Performance-Dashboard/
-├── Carrefour.pbix          # Power BI project file
-├── Carrefour_Dataset.xlsx  # Source dataset
-├── screenshots/            # Dashboard page exports
-│   ├── Sales.png
-│   ├── Branches.png
-│   ├── Customers.png
-│   └── Products.png
-└── README.md
+* **Customer Behavior:** The **Adult** customer segment generated more than **20M** in sales, making it the highest-performing age group.
+
+* **Peak Transaction Time:** The **Afternoon** recorded the highest number of transactions, with **372 transactions**.
+
+* **Branch Performance:** **Carrefour Maadi** recorded the highest sales performance, followed by **Carrefour Giza**, with relatively close performance across the branches.
+
+These findings provide a clearer view of sales performance, customer behavior, and areas that may require further investigation.
+
+
+## Tools & Technologies
+
+* **Power BI** — Dashboard development and data visualization
+* **Power Query** — Data cleaning and transformation
+* **DAX** — Calculated measures and key performance indicators
+* **Excel** — Data source and initial data preparation
+
 ```
 
 ## Screenshots
@@ -84,6 +91,7 @@ Carrefour-Retail-Performance-Dashboard/
 
 ### Product Dashboard
 ![Product Dashboard](Products.png)
+
 
 ## How to Explore
 
