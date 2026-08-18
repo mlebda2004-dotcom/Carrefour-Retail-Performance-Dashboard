@@ -74,16 +74,16 @@ Carrefour-Retail-Performance-Dashboard/
 ## Screenshots
 
 ### Sales Dashboard
-![Sales Dashboard](screenshots/Sales.png)
+![Sales Dashboard](Sales.png)
 
 ### Branches Performance
-![Branches Performance](screenshots/Branches.png)
+![Branches Performance](Branches.png)
 
 ### Customer Insights
-![Customer Insights](screenshots/Customers.png)
+![Customer Insights](Customers.png)
 
 ### Product Dashboard
-![Product Dashboard](screenshots/Products.png)
+![Product Dashboard](Products.png)
 
 ## How to Explore
 
