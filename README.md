@@ -41,16 +41,16 @@ The cleaned dataset was then used to build the interactive Power BI dashboard.
 
 ## Dashboard Pages
 
-# 1. Sales Dashboard
+### 1. Sales Dashboard
 Overview of gross sales, net sales, profit, and quantity sold, broken down by store city, store name, monthly trend, and peak transaction time (morning/afternoon/evening/night).
 
-# 2. Branches Performance
+### 2. Branches Performance
 Compares the three store regions (North Coast, Greater Cairo, Delta) and their cities/branches on net sales, returns, and profit, with year and demographic (age group, gender) filters.
 
-# 3. Customer Insights
+### 3. Customer Insights
 Analyzes customer behavior: sales by age group and gender, order channel usage by age group, and transaction status breakdown (completed / cancelled / returned) with a return rate KPI.
 
-# 4. Product Dashboard
+### 4. Product Dashboard
 Breaks down sales, profit, and quantity by brand (HP, Samsung, Fresh, Apple, LG) and by individual product, filterable by year and city.
 
 
