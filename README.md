@@ -76,7 +76,6 @@ These findings provide a clearer view of sales performance, customer behavior, a
 * **DAX** — Calculated measures and key performance indicators
 * **Excel** — Data source and initial data preparation
 
-```
 
 ## Screenshots
 
