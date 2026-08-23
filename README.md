@@ -100,3 +100,9 @@ These findings provide a clearer view of sales performance, customer behavior, a
 
 ---
 *Built as part of my Data Analysis & Business Intelligence learning journey.*
+
+---
+
+Data Analyst | Transforming raw data into clear, actionable insights using Power BI, SQL, Excel, and Python.
+
+📫 Connect with me on [LinkedIn](https://www.linkedin.com/in/mahmoud-lebda728)
